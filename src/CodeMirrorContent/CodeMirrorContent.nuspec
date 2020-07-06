@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <releaseNotes>Migrated structure to independent pattern.</releaseNotes>
+    <title>$title$</title>
+    <description>$description$</description>
+    <authors>TheDigitalGabeg</authors>
+    <owners>TheDigitalGabeg</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>.NET web Umbraco CodeMirror</tags>
+    <projectUrl>https://github.com/TheDigitalGabeg/our.umbraco.CodeMirrorContent</projectUrl>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="UmbracoCms.Core" version="8.1" />
+      </group>
+   </dependencies>
+  </metadata>
+  <files>
+    <file src="content\**" target="content" />
+  </files>
+</package>

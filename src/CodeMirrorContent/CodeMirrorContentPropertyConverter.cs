@@ -6,11 +6,11 @@ using System.Web;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Core.PropertyEditors;
 
-namespace Rhythm.Umbraco.CodeMirror {
-    public class RhythmCodeMirrorPropertyConverter : IPropertyValueConverter {
+namespace Our.Umbraco.CodeMirrorContent {
+    public class CodeMirrorContentPropertyConverter : IPropertyValueConverter {
 
         public bool IsConverter(IPublishedPropertyType propertyType) {
-            return propertyType.EditorAlias.Equals("Rhythm.CodeMirror");
+            return propertyType.EditorAlias.Equals("Our.Umbraco.CodeMirrorContent");
         }
 
         public object ConvertIntermediateToObject(IPublishedElement owner, IPublishedPropertyType propertyType, PropertyCacheLevel referenceCacheLevel, object inter, bool preview) {

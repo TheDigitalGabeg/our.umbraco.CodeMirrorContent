@@ -2,8 +2,8 @@
 
     const codeMirrorEditorController = function ($scope, $element, $sce, $routeParams, contentResource, editorService, editorState, entityResource) {
 
-        const valueField = $element.find('.rcm-editor__value');
-        const editorFrame = $element.find('.rcm-editor__editor-frame');
+        const valueField = $element.find('.oucmc-editor__value');
+        const editorFrame = $element.find('.oucmc-editor__editor-frame');
 
         // set value field to current model value
         valueField.val($scope.model.value);
@@ -16,9 +16,8 @@
         valueField.on('value-updated', updateValue);
 
         // set up editor appearance
-        $scope.showToolbar = $scope.model.config.enableImportButton;
         $scope.editorHeight = ($scope.model.config.rows * 16) + 4;
-        $scope.frameUrl = $sce.trustAsResourceUrl("/App_Plugins/Rhythm.CodeMirror/codemirror/codemirror.html?lang=" + $scope.model.config.language);
+        $scope.frameUrl = $sce.trustAsResourceUrl("/App_Plugins/CodeMirrorContent/codemirror/codemirror.html?lang=" + $scope.model.config.language);
 
         // set up Import button functionality
         const pickerTemplate = {
@@ -81,10 +80,10 @@
             editorService.contentPicker(pickerTemplate);
         };
     };
-    angular.module("umbraco").controller("Rhythm.PropertyEditors.CodeMirrorController", codeMirrorEditorController);
+    angular.module("umbraco").controller("Our.Umbraco.CodeMirrorContent.CodeMirrorController", codeMirrorEditorController);
 
     const codeMirrorLanguageController = function ($scope) {
     };
-    angular.module("umbraco").controller("Rhythm.PrevalueEditors.CodeMirrorLanguageController", codeMirrorLanguageController);
+    angular.module("umbraco").controller("Our.Umbraco.CodeMirrorContent.CodeMirrorLanguageController", codeMirrorLanguageController);
 
 })();

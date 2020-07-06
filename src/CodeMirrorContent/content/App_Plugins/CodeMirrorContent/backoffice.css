@@ -1,0 +1,14 @@
+﻿.oucmc-editor {
+}
+
+.oucmc-editor .oucmc-editor__editor-frame {
+    display: inline-block;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #d8d7d9;
+    box-sizing: border-box;
+}
+
+.oucmc-editor .oucmc-editor__toolbar {
+    margin-bottom: 12px;
+}

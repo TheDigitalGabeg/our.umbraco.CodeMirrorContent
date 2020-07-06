@@ -7,8 +7,8 @@
     <ProjectGuid>{C2C7FD7C-6352-48A5-8611-BF32235C489D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Rhythm.Umbraco.CodeMirror</RootNamespace>
-    <AssemblyName>Rhythm.Umbraco.CodeMirror</AssemblyName>
+    <RootNamespace>Our.Umbraco.CodeMirrorContent</RootNamespace>
+    <AssemblyName>Our.Umbraco.CodeMirrorContent</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -147,7 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RhythmCodeMirrorPropertyConverter.cs" />
+    <Compile Include="CodeMirrorContentPropertyConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
